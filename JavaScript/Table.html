@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f1(f)
+        {
+            y=f.t1.value
+            let i=1
+            while(i<=10)
+            {
+                m=y*i
+                document.write(m+"<br>")
+                i=i+1
+            }   
+        }
+    </script>
+</head>
+<body>
+    <h1 align="center">Generate Table of Given Number Using Java Script</h1>
+    <form>
+        <table align="center">
+            <tr>
+                <td>Enter Number</td>
+                <td><input type=text name="t1"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Generate Table" onclick="f1(this.form)">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

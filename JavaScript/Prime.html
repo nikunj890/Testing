@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f1(f)
+        {
+            p=f.t1.value 
+            let i=2
+            let x=0
+            while(i<p)
+            {
+                    if(p%i==0)
+                    {
+                        x=0
+                        break
+                    }
+                    else
+                        x=1
+                i=i+1
+            }
+            if(x==0)
+                document.write("Not Prime Number"+"<br>")
+            else
+               document.write("Prime Number"+"<br>")
+            
+               
+        }
+    </script>
+</head>
+<body>
+    <h1 align="center">To Check Given Number is Prime or Not</h1>
+    <form>
+        <table align="center">
+            <tr>
+                <td>Enter Number</td>
+                <td><input type=text name="t1"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Prime Check" onclick="f1(this.form)">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f1()
+        {
+            var x=prompt("Enter First Number")
+            var y=prompt("Enter Second Number")
+            z=parseInt(x)+parseInt(y)
+            alert("Result is "+z)
+        }
+        function f2()
+        {
+            var x=prompt("Enter First Number")
+            var y=prompt("Enter Second Number")
+            z=parseInt(x)-parseInt(y)
+            alert("Result is "+z)
+        }
+        function f3()
+        {
+            var x=prompt("Enter First Number")
+            var y=prompt("Enter Second Number")
+            z=parseInt(x)*parseInt(y)
+            alert("Result is "+z)
+        }
+        function f4()
+        {
+            var x=prompt("Enter First Number")
+            var y=prompt("Enter Second Number")
+            z=parseInt(x)/parseInt(y)
+            alert("Result is "+z)
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <h1 align="center">Arithmetic Program</h1>
+        <input type="button" value="Addition" onclick="f1()">
+        <input type="button" value="Subtraction" onclick="f2()">
+        <input type="button" value="Multiplication" onclick="f3()">
+        <input type="button" value="Division" onclick="f4()">
+    </form>
+</body>
+</html>

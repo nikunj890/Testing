@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f1(f)
+        {
+            let a=0
+            let b=1
+            let c=0
+            y=f.t1.value
+            y=y-2
+            document.write(a+" "+b+" ")
+            while(y>=1)
+            {
+                c=a+b
+                document.write(c+" ")
+                a=b
+                b=c
+                y=y-1
+            }   
+        }
+    </script>
+</head>
+<body>
+    <h1 align="center">Fibonacci Series</h1>
+    <form>
+        <table align="center">
+            <tr>
+                <td>How Many Terms for Fibonacci Series</td>
+                <td><input type=text name="t1"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Generate Series" onclick="f1(this.form)">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

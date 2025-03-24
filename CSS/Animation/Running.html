@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width:200px;
+            height:100px;
+            position: relative;
+            animation: ani1 5s infinite;
+        }
+       
+        .r1
+        {
+            animation-timing-function: linear;
+        }
+        .r2
+        {
+            animation-timing-function: ease;
+        }
+        .r3
+        {
+            animation-timing-function: ease-in;
+        }
+        .r4
+        {
+            animation-timing-function: ease-out;
+        }
+        .r5
+        {
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes ani1 {
+            from{left:0px;}
+            to{left:500px;};
+            
+        }
+       
+    </style>
+    
+</head>
+<body>
+    <div>
+        <img src="Images/C2.gif">
+    </div>
+    <div>
+        <img src="Images/M1.gif">
+    </div>
+    <div>
+        <img src="Images/P1.gif">
+    </div>
+    <div>
+        <img src="Images/P2.gif">
+    </div>
+    <div>
+        <img src="Images/R1.gif">
+    </div>
+    
+    
+</body>
+</html>

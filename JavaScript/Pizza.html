@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-image: url("pizza.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <script>
+        function f1(f)
+        {
+            var p=f.order.value 
+            if(p==1)
+            {
+                pn="Deep Dish Pizza"
+                rs=560
+            }
+            if(p==2)
+            {
+                pn="Italian Pizza"
+                rs=780
+            }
+            if(p==3)
+            {
+                pn="California Pizza"
+                rs=480
+            }
+            if(p==4)
+            {
+                pn="Margherita Pizza"
+                rs=840
+            }
+            if(p==5)
+            {
+                pn="Vegetable Pizza"
+                rs=320
+            }
+            if(p==6)
+            {
+                pn="Neapolitan Pizza"
+                rs=600
+            }
+            alert("Your Pizza "+pn+" is Ready Please Pay Rs "+rs+"")
+        }
+    </script>
+</head>
+<body>
+    <h1 align="center">Yummy Pizza!!</h1>
+    <h2 align="center">Book Your Order and Your Delicious Pizza will ready
+        with in 30 minutes.</h2>
+    <center>
+    <form>
+        <select name="order" onchange="f1(this.form)">
+            <option value="1">Deep Dish Pizza - Rs. 560/-</option>
+            <option value="2">Italian Pizza       - Rs. 780/-</option>
+            <option value="3">California Pizza - Rs. 480/-</option>
+            <option value="4">Margherita Pizza - Rs. 840/-</option>
+            <option value="5">Vegetable Pizza  - Rs. 320/-</option>
+            <option value="6">Neapolitan Pizza - Rs. 600/-</option>
+        </select>
+    </form>
+</center>
+</body>
+</html>

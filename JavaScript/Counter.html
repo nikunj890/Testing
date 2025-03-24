@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .c1{
+            width:300px;
+            height:200px;
+            background-color: greenyellow;
+            color:brown;
+            border:10px double brown;
+            font-size: 48px;
+            margin-left:500px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        setInterval(f1,10)
+        i=0
+        m=0
+        h=0
+        function f1()
+        {
+            document.getElementById("count").innerHTML=h+":"+m+":"+i
+            i=i+1
+            if(i==59)
+            {
+                m=m+1
+                i=0
+            }
+            if(m==59)
+            {
+                m=0
+                h=h+1
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 align="center">Counter in JavaScript</h1>
+    <p id="count" class="c1"></p>
+</body>
+</html>

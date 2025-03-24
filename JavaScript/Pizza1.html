@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #One {
+            width: 300px;
+            height: 400px;
+            background-image: url("pizza.webp");
+            background-size: cover;
+            color: blue;
+            color: azure;
+            font-size: 36px;
+            border: 10px solid green;
+            float: left;
+            margin: 30px;
+        }
+
+        #two {
+            width: 300px;
+            height: 400px;
+            border: 10px solid aquamarine;
+            float: left;
+            margin: 30px;
+        }
+        #three
+        {
+            font-size:36px;
+        }
+    </style>
+    <script>
+        function f1(f)
+        {
+            cn=f.t1.value
+            pn=f.t2.value
+            ca=f.t3.value
+            v=f.order.value
+            if(v==1)
+            {
+                    pn="Deep Dish Pizza"
+                    rs=560
+            }
+            if(v==2)
+            {
+                    pn="Italian Pizza"
+                    rs=780
+            }
+            if(v==3)
+            {
+                    pn="California Pizza"
+                    rs=480
+            }
+
+            if(v==4)
+            {
+                    pn="Margherita Pizza"
+                    rs=840
+            }
+            if(v==5)
+            {
+                    pn="Vegetable Pizza"
+                    rs=320
+            }
+            if(v==6)
+            {
+                pn="Neapolitan Pizza"
+                rs=600
+            }
+            y="Thank You "+cn+" Your "+pn +" is ready " +" Please Pay "+rs+"rs./"
+            document.getElementById("three").innerText=y
+        }
+    </script>
+</head>
+<body>
+    <h1 align="center">Multiple Id in JavaScript</h1>
+    <div id="One">
+        <form>
+            <table align="center">
+                <tr>
+                    <td><input type=text placeholder="Customer Name" name="t1" required></td>
+                </tr>
+                <tr>
+                    <td><input type=text placeholder="Customer Contact" name="t2" required></td>
+                </tr>
+                <tr>
+                    <td><textarea placeholder="Customer Address" name="t3" required></textarea></td>
+                </tr>
+                <tr>
+                    <td>
+                    <select name="order">
+                      <option value="1">Deep Dish Pizza - Rs. 560/-</option>
+                      <option value="2">Italian Pizza - Rs. 780/-</option>
+                      <option value="3">California Pizza - Rs. 480/-</option>
+                      <option value="4">Margherita Pizza - Rs. 840/-</option>
+                      <option value="5">Vegetable Pizza - Rs. 320/-</option>
+                      <option value="6">Neapolitan Pizza - Rs. 600/-</option>
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                <td align="center">
+                    <input type=button value="Place Order" onclick="f1(this.form)">
+                </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id="two">
+        <h1>Order Summary</h1>
+        <div id="three"></div>
+    </div>
+</body>
+</html>

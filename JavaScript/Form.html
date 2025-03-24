@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script>
+        function f1(f) 
+        {
+             var x=f.un.value
+             var y=f.pass.value
+             alert("Your Name is "+x)
+             alert("Password is "+y)
+        }
+    </script>
+</head>
+<body>
+    <h1 align="center">New User Registration Form </h1>
+    <form>
+        <table align="center">
+            <tr>
+                <td>UserName</td>
+                <td><input type=text name=un></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type=password name=pass></td>
+            </tr>
+            <tr>
+               <td align="center" colspan="2">
+                <input type=submit onclick="f1(this.form)">
+               </td>
+            </tr>
+            
+        </table>
+    </form>
+</body>
+</html>
